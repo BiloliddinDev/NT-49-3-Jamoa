@@ -1,0 +1,30 @@
+@mixin list-stiyle() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text-decaration($size) {
+  text-decoration: none;
+  font-size: $size;
+}
+
+@mixin bacraund-img($position, $size) {
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-size: $size;
+}
+
+@mixin display($direction, $iteam, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $iteam;
+  justify-content: $justify;
+}
+
+@mixin before-after($position, $size) {
+  content: "";
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-size: $size;
+}
