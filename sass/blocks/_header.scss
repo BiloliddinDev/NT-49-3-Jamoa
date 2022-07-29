@@ -1,0 +1,137 @@
+.header {
+  height: 530px;
+
+  &__section {
+    width: 1170px;
+    height: 38px;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    &-headline {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: #151515;
+    }
+  }
+
+  &__link {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    align-items: center;
+    &::after {
+      content: "";
+      background-image: url("../../images/Vector.svg");
+      height: 16px;
+      width: 16px;
+      background-size: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  
+}
+
+.boxx {
+  width: 1170px;
+  //height: 332px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  //display: flex;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  width: 268px;
+  //height: 323px;
+  padding: 16px;
+
+  &__image {
+    width: 236px;
+    height: 180px;
+    margin: 0 0 16px;
+    border-radius: 12px;
+  }
+
+  &__title {
+    width: 251px;
+    height: 23px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    margin: 0 0 4px;
+  }
+
+  &__text {
+    display: flex;
+    color: #575757;
+    width: 251px;
+    height: 16px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 8px;
+  }
+
+  &__price {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+    margin-right: 55px;
+    color: #151515;
+    width: 79px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &__del {
+    width: 35px;
+    //height: 18px;
+    left: 0px;
+    top: calc(50% - 18px/2 + 13.5px);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a9a9a9;
+  }
+}
+
+.box3:before {
+  content: "-36%";
+  background-color: #f4f8ec;
+  display: flex;
+  border-radius: 12px;
+  color: #6A983C;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 10px;
+  position: absolute;
+  width: 54px;
+  height: 18px;
+  margin-left: 12px;
+  margin-top: 12px;
+}
